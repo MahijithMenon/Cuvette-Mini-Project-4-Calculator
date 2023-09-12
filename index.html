@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="display">0</div>
+      <div id="keys">
+        <div class="row">
+          <button onClick="getInput('7')">7</button>
+          <button onClick="getInput('8')">8</button>
+          <button onClick="getInput('9')">9</button>
+          <button onClick="deleteDigit()">DEL</button>
+        </div>
+        <div class="row">
+          <button onClick="getInput('4')">4</button>
+          <button onClick="getInput('5')">5</button>
+          <button onClick="getInput('6')">6</button>
+          <button onClick="getInput('+')">+</button>
+        </div>
+        <div class="row">
+          <button onClick="getInput('1')">1</button>
+          <button onClick="getInput('2')">2</button>
+          <button onClick="getInput('3')">3</button>
+          <button onClick="getInput('-')">-</button>
+        </div>
+        <div class="row">
+          <button onClick="getInput('.')">.</button>
+          <button onClick="getInput('0')">0</button>
+          <button onClick="getInput('/')">/</button>
+          <button onClick="getInput('*')">x</button>
+        </div>
+        <div class="row">
+          <button onClick="resetDisplay()" class="reset">RESET</button>
+          <button onClick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
